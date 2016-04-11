@@ -1,0 +1,18 @@
+<!-- <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
+
+<header class="navbar navbar-light bg-faded">
+  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar">&#9776;</button>
+
+  <div class="collapse navbar-toggleable-xs" id="navbar">
+    <a class="navbar-brand" href="#"></a>
+    <ul class="nav navbar-nav">
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+        </li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</header>
