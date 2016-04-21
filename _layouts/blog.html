@@ -19,6 +19,18 @@ layout: default
             </div><!--/.hero-body-->
         </div><!--/.container-fluid-->
     </section><!--/.hero -->
+      <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
     <section>
         <div class="container-fluid">
             <div class="row">
