@@ -6,8 +6,8 @@
 </description>
     <link>//netapp.github.io//</link>
     <atom:link href="//netapp.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Apr 2016 09:58:43 -0400</pubDate>
-    <lastBuildDate>Thu, 21 Apr 2016 09:58:43 -0400</lastBuildDate>
+    <pubDate>Thu, 21 Apr 2016 10:02:24 -0400</pubDate>
+    <lastBuildDate>Thu, 21 Apr 2016 10:02:24 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Thu, 10 Mar 2016 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//test</link>
-        <guid isPermaLink="true">//netapp.github.io//test</guid>
+        <link>//netapp.github.io//test.html</link>
+        <guid isPermaLink="true">//netapp.github.io//test.html</guid>
         
         <category>report</category>
         
@@ -56,8 +56,8 @@
 
 </description>
         <pubDate>Wed, 09 Mar 2016 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//welcome-to-jekyll</link>
-        <guid isPermaLink="true">//netapp.github.io//welcome-to-jekyll</guid>
+        <link>//netapp.github.io//welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">//netapp.github.io//welcome-to-jekyll.html</guid>
         
         <category>video</category>
         
@@ -76,8 +76,8 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//first-post</link>
-        <guid isPermaLink="true">//netapp.github.io//first-post</guid>
+        <link>//netapp.github.io//first-post.html</link>
+        <guid isPermaLink="true">//netapp.github.io//first-post.html</guid>
         
         <category>document</category>
         
@@ -98,8 +98,8 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//first-post</link>
-        <guid isPermaLink="true">//netapp.github.io//first-post</guid>
+        <link>//netapp.github.io//first-post.html</link>
+        <guid isPermaLink="true">//netapp.github.io//first-post.html</guid>
         
         <category>video</category>
         
@@ -118,8 +118,8 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Nov 2015 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//sample</link>
-        <guid isPermaLink="true">//netapp.github.io//sample</guid>
+        <link>//netapp.github.io//sample.html</link>
+        <guid isPermaLink="true">//netapp.github.io//sample.html</guid>
         
         <category>report</category>
         
@@ -138,8 +138,8 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
         <pubDate>Thu, 05 Nov 2015 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//sample</link>
-        <guid isPermaLink="true">//netapp.github.io//sample</guid>
+        <link>//netapp.github.io//sample.html</link>
+        <guid isPermaLink="true">//netapp.github.io//sample.html</guid>
         
         <category>document</category>
         

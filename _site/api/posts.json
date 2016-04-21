@@ -2,7 +2,7 @@
   "posts": [
     {
       "title": "Test",
-      "url": "/test",
+      "url": "/test.html",
       "date": "March 10, 2016",
       "categories": "openstack",
       "tags": "report",
@@ -11,7 +11,7 @@
     },
     {
       "title": "Welcome to Jekyll!",
-      "url": "/welcome-to-jekyll",
+      "url": "/welcome-to-jekyll.html",
       "date": "March 9, 2016",
       "categories": "openstack",
       "tags": "video",
@@ -20,7 +20,7 @@
     },
     {
       "title": "First Post",
-      "url": "/first-post",
+      "url": "/first-post.html",
       "date": "February 1, 2016",
       "categories": "openstack",
       "tags": "document report",
@@ -29,7 +29,7 @@
     },
     {
       "title": "First Post",
-      "url": "/first-post",
+      "url": "/first-post.html",
       "date": "February 1, 2016",
       "categories": "containers",
       "tags": "video",
@@ -38,7 +38,7 @@
     },
     {
       "title": "Harvest Sample",
-      "url": "/sample",
+      "url": "/sample.html",
       "date": "November 5, 2015",
       "categories": "harvest",
       "tags": "report",
@@ -47,7 +47,7 @@
     },
     {
       "title": "Containers Sample",
-      "url": "/sample",
+      "url": "/sample.html",
       "date": "November 5, 2015",
       "categories": "containers",
       "tags": "document",
