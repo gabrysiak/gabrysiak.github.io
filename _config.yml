@@ -47,7 +47,7 @@ url: "//netapp.github.io/" # the base hostname & protocol for your site
 twitter_username: openstacknetapp
 github_username:  netapp
 
-permalink: /:title.html
+permalink: date
 paginate_path: /page:num
 timezone: null
 
