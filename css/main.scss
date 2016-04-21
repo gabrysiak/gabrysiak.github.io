@@ -4,8 +4,7 @@
 @charset "utf-8";
 
 
-
-// Our variables
+/* // Our variables
 $base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
@@ -50,4 +49,36 @@ $on-laptop:        800px;
         "base",
         "layout",
         "syntax-highlighting"
-;
+; */
+
+//helpers
+@import 'helpers/_variables';
+@import 'helpers/_flexbox';
+@import 'helpers/_mixins';
+@import 'helpers/_fonts';
+
+// libs
+@import "../lib/bootstrap/scss/bootstrap.scss";
+
+//base
+@import 'base/_typography';
+
+//layout
+// @import 'layout/_bootstrap-xl';
+@import 'layout/_structure';
+@import 'layout/_header';
+@import 'layout/_footer';
+
+//components
+@import 'components/_buttons';
+@import 'components/_cards';
+@import 'components/_forms';
+@import 'components/_hero';
+@import 'components/_testimonial';
+
+
+//pages
+@import 'pages/_landing';
+@import 'pages/_openstack-landing';
+@import 'pages/_openstack-list';
+@import 'pages/_openstack-detail';

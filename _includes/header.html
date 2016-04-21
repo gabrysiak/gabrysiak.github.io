@@ -1,18 +1,32 @@
-<!-- <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a> -->
-
-<header class="navbar navbar-light bg-faded">
-  <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#navbar">&#9776;</button>
-
-  <div class="collapse navbar-toggleable-xs" id="navbar">
-    <a class="navbar-brand" href="#"></a>
-    <ul class="nav navbar-nav">
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+<header class="site-header" ng-controller="headerCtrl as ctrl" ng-cloak>
+  <div class="container-fluid">
+    
+    
+    <div class="header-logo">
+      <a class="logo" href="#">
+        <span class="current-project">[[ project.charAt(0).toUpperCase() + project.slice(1) ]]</span>
+        <img src="/img/logo.png" srcset="/img/logo@2x.png 2x" alt="NetApp Logo">
+      </a>
+    </div>
+    <div class="header-navs">
+      <ul class="main-menu">
+        <li class="" ng-repeat="page in ctrl.mainMenu">
+          <a class="" href="[[ page.url ]]">[[ page.title ]]</a>
         </li>
-        {% endif %}
-      {% endfor %}
-    </ul>
-  </div>
+      </ul>
+
+      <div class="dropdown projects">
+        <button class="btn btn-default dropdown-toggle" type="button" id="projects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          [[ project.charAt(0).toUpperCase() + project.slice(1) ]]
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="projects">
+          <li class="nav-item" ng-repeat="project in ctrl.projects">
+            <a class="nav-link" href="/[[ project.slug ]]" ng-click="setProject(project.slug)">[[ project.name ]]</a>
+          </li>
+        </ul>
+      </div><!--/.dropdown.projects-->
+    </div><!--/.header-navs-->
+    
+  </div><!--/.container-fluid-->
 </header>

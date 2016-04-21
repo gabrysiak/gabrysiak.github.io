@@ -1,9 +1,47 @@
-<footer class="site-footer">
+<section class="bg-primary text-xs-center" ng-controller="footerCtrl as ctrl">
+  <div class="container-fluid container-small">
+    <h2>Get in touch.</h2>
+    <p>Are you and your company ready to go further, faster? Sign up to recieve our technical newsletters and invitations to webcasts, chats, and live events.</p>
+    <div>
+        <form class="form-inline" name="contactForm" ng-submit="ctrl.submitForm(contactForm.$valid)">
+            <div class="form-group">
+                <input type="text" class="form-control" id="exampleInputName2" ng-model="ctrl.name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" id="exampleInputEmail2" ng-model="ctrl.email" placeholder="Email Address" required>
+            </div>
+            <button id="subscription-button" type="submit" class="btn btn-secondary">subscribe</button>
+        </form>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="container-fluid">
+    <div class="testimonial">
+      <div class="testimonial-img"><img src="http://placehold.it/280x280" alt=""></div>
+      <div class="testimonial-body">
+        <blockquote>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat suscipit consectetur repellendus, dolor quidem atque quos explicabo accusamus doloribus facilis aperiam perspiciatis non numquam sapiente nobis neque, soluta, distinctio dignissimos."</blockquote>
+        <cite><strong>Someguy Lastname,</strong> Company Name</cite> 
+      </div>
+    </div><!--/.testimonial-->
+  </div>
+</section>
+
+<footer id="footer" ng-controller="headerCtrl as ctrl" ng-cloak>
+  <div class="container-fluid">
+    <nav class="nav nav-inline footer-menu">
+      <a ng-repeat="page in ctrl.footerMenu" class="nav-link" href="[[ page.url ]]">[[ page.title ]]</a>
+    </nav>
+
+    <div class="copyright">&copy; {{ site.time | date: '%Y' }} NetApp, All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- <footer class="site-footer" ng-controller="headerCtrl as ctrl" ng-cloak>
 
   <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
+    
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
@@ -33,6 +71,13 @@
       </div>
     </div>
 
+    <ul class="nav navbar-nav">
+      <li class="nav-item" ng-repeat="page in ctrl.footerMenu">
+        <a class="nav-link" href="[[ page.url ]]">[[ page.title ]]</a>
+      </li>
+    </ul>
+
   </div>
 
 </footer>
+ -->

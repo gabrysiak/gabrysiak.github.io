@@ -1,0 +1,16 @@
+---
+layout: null
+---
+
+{
+  "pages": [
+    {% for page in site.pages %}{
+      "title": "{{ page.title }}",
+      "project": "{{ page.project }}",
+      "type": "{{ page.type }}",
+      "url": "{{ page.url | prepend: site.baseurl }}",
+      "order": "{{ page.order }}"
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

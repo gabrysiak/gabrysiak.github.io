@@ -1,0 +1,56 @@
+.hero {
+	text-align: center;
+	color: #fff;
+
+	//add more top padding to give space to header
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+
+	//add multiple background images here
+	background: $color-primary;
+	background: url(../img/hero-nodes-top-left.png) left top no-repeat, 
+				url(../img/hero-nodes-bottom-right.png) right bottom no-repeat $color-primary;
+
+	
+	//header spacing
+	h1 {
+		margin-bottom: 2rem;
+	}
+
+	.hero-body {
+		&.hero-body-small {
+			max-width: 650px;
+			margin: auto;
+		}	
+	} //eof hero-body
+
+	a {
+		color: $color-secondary;
+	}
+}
+
+.hero-btn-group {
+	margin-top: 3rem;
+
+	.btn {
+		display: block;
+	}
+
+	.btn + .btn {
+		margin-top: 1rem;
+	}
+
+	@include media-breakpoint-up(sm) {
+		.btn {
+			width: 200px;
+			max-width: 100%;
+			display: inline-block;
+		}
+
+		.btn + .btn {
+			margin-left: 2rem;
+			margin-top: 0;
+		}
+	}
+	
+}

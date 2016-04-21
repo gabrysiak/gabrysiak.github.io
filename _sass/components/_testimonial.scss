@@ -1,0 +1,57 @@
+.testimonials {
+	//section styles
+	color: #fff;
+
+	//add multiple background images here
+	background: $color-secondary;
+	background: url(../img/testimonial-nodes-left.png) top left no-repeat, url(../img/testimonial-nodes-right.png) bottom right no-repeat $color-secondary;
+	// background-size: auto 100%, auto 100%;
+
+
+	//element styles
+	blockquote {
+		font-style: italic;
+		font-size: 1.125rem;
+	}
+
+	cite {
+		font-style: normal;
+		font-weight: 300;
+		font-size: 1.25rem;
+	}
+}
+
+.testimonial {
+	max-width: 900px;
+	margin: auto;
+
+	.testimonial-img {
+		text-align: center;
+		margin-bottom: 1rem;
+
+		img {
+			border-radius: 50%;
+			max-width: 150px;
+		}
+	}
+
+	@include media-breakpoint-up(sm) {
+		@include flexbox;
+
+		.testimonial-img {
+			@include flex(0 0 100px);
+			margin-bottom: 0;
+
+			img {
+				max-width: 100%;
+			}
+		}
+
+		.testimonial-body {
+			@include flexbox;
+			@include flex(1);
+			@include flex-direction(column);
+			padding-left: 1.5rem;
+		}
+	}
+}

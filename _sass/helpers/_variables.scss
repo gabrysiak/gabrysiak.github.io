@@ -1,0 +1,39 @@
+/* colors */
+$color-primary: 			#458ED5; 	//blue
+$color-primary-light: 		#80BDF8; 	//light blue
+$color-secondary: 			#8EC373; 	//green
+$color-secondary-dark: 		#598D3E; 	//dark green
+$color-error: 				#FF0000; 	//red
+
+$color-primary-gray-light:	#899FB6; 	//bluish light gray
+$color-primary-gray-dark:	#536A82;	//bluish dark gray	
+
+
+$color-gray:				#555555;	//dark gray
+$color-gray-muted:			#999999;	//light gray good for subtitles/captions
+$color-gray-light: 			#F3F5F8;	//light gray good for bg	
+
+
+/* fonts */
+$font-primary: 				'Lato', 'sans-serif';
+
+
+/* BOOTSTRAP VARIABLES OVERRIDES */
+$font-family-sans-serif:	$font-primary;
+$brand-primary:             $color-primary;
+$enable-flex:               true;
+$body-color: 				$color-primary-gray-light;
+
+// bootstrap buttons
+$btn-secondary-color:      	#fff;
+$btn-secondary-bg:         	$color-secondary;
+$btn-secondary-border:      $color-secondary;
+$btn-border-radius:			0;
+
+// cards
+$card-border-width:        0;
+$card-border-radius:       0;
+
+// links
+$link-hover-color:           $color-primary-light;
+$link-hover-decoration:      none;
