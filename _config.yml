@@ -18,7 +18,10 @@ destination: ./_site
 plugins_dir:     ./_plugins
 layouts_dir:     ./_layouts
 data_dir: ./_data
-collections: null
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:date/:title/
 
 safe: false
 include: [".htaccess", "_pages"]
