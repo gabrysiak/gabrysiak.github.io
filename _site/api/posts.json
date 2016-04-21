@@ -2,30 +2,56 @@
   "posts": [
     {
       "title": "Test",
-      "url": "/jekyll/update/2016/03/10/test.html",
+      "url": "/openstack/2016/03/10/test.html",
       "date": "March 10, 2016",
-      "keywords": " jekyll update",
+      "categories": "openstack",
+      "tags": "report",
+      "keywords": " report openstack",
       "raw_date": "2016-03-10 11:53:52 -0500"
     },
     {
       "title": "Welcome to Jekyll!",
-      "url": "/jekyll/update/2016/03/09/welcome-to-jekyll.html",
+      "url": "/openstack/2016/03/09/welcome-to-jekyll.html",
       "date": "March 9, 2016",
-      "keywords": " video jekyll update",
+      "categories": "openstack",
+      "tags": "video",
+      "keywords": " video openstack",
       "raw_date": "2016-03-09 11:53:52 -0500"
     },
     {
       "title": "First Post",
-      "url": "/document/2016/02/01/first-post.html",
+      "url": "/openstack/2016/02/01/first-post.html",
       "date": "February 1, 2016",
-      "keywords": " document",
+      "categories": "openstack",
+      "tags": "document report",
+      "keywords": " document report openstack",
       "raw_date": "2016-02-01 11:53:52 -0500"
     },
     {
-      "title": "Sample",
-      "url": "/report/2015/11/05/sample.html",
+      "title": "First Post",
+      "url": "/containers/2016/02/01/first-post.html",
+      "date": "February 1, 2016",
+      "categories": "containers",
+      "tags": "video",
+      "keywords": " video containers",
+      "raw_date": "2016-02-01 11:53:52 -0500"
+    },
+    {
+      "title": "Harvest Sample",
+      "url": "/harvest/2015/11/05/sample.html",
       "date": "November 5, 2015",
-      "keywords": " report",
+      "categories": "harvest",
+      "tags": "report",
+      "keywords": " report harvest",
+      "raw_date": "2015-11-05 11:53:52 -0500"
+    },
+    {
+      "title": "Containers Sample",
+      "url": "/containers/2015/11/05/sample.html",
+      "date": "November 5, 2015",
+      "categories": "containers",
+      "tags": "document",
+      "keywords": " document containers",
       "raw_date": "2015-11-05 11:53:52 -0500"
     }
     
