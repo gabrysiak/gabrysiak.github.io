@@ -7,7 +7,7 @@ categories: document
 tags: random stuff
 type: blog
 author: John Doe
-permalink: short-urls-jekyll
+permalink: short-urls-jekyll-2
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

@@ -43,12 +43,11 @@ excerpt_separator: "\n\n"
 
 detach: false
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "//netapp.github.io/" # the base hostname & protocol for your site
+url: "//gabrysiak.github.io/" # the base hostname & protocol for your site
 twitter_username: openstacknetapp
 github_username:  netapp
 youtube_username: NetAppTV
 
-permalink: date
 paginate_path: /page:num
 timezone: null
 

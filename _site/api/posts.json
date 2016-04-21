@@ -2,7 +2,7 @@
   "posts": [
     {
       "title": "Test",
-      "url": "/short-urls-jekyll",
+      "url": "/short-urls-jekyll-4",
       "date": "March 10, 2016",
       "image": "/img/blog-img.png",
       "categories": "video",
@@ -13,7 +13,7 @@
     },
     {
       "title": "Welcome to Jekyll!",
-      "url": "/short-urls-jekyll",
+      "url": "/short-urls-jekyll-3",
       "date": "March 9, 2016",
       "image": "/img/blog-img.png",
       "categories": "report",
@@ -24,7 +24,7 @@
     },
     {
       "title": "First Post",
-      "url": "/short-urls-jekyll",
+      "url": "/short-urls-jekyll-2",
       "date": "February 1, 2016",
       "image": "/img/blog-img.png",
       "categories": "document",
