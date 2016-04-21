@@ -6,15 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Blog</title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
+  <title>First Post</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nost...">
 
   <!-- <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="/lib/material-design-iconic-font/dist/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="//netapp.github.io//containers/blog">
+  <link rel="canonical" href="//netapp.github.io//first-post">
   <link rel="alternate" type="application/rss+xml" title="NetApp" href="//netapp.github.io//feed.xml">
 
   <script src="/lib/angular/angular.min.js"></script>
@@ -59,43 +58,30 @@
   </div><!--/.container-fluid-->
 </header>
     
-    <div ng-controller="searchCtrl as ctrl" ng-cloak>
     <section class="hero">
-        <div class="container-fluid">
-            <div class="hero-body hero-body-small">
-                <div class="input-group">
-                    <div class="input-group-addon"><span class="fa fa-search"></span></div>
-                    <input type="search" class="form-control" id="keywords" placeholder="Type Some Keywords" ng-model="ctrl.query">
-                </div>
-                <a class="btn btn-primary" href="#" ng-click="ctrl.query='video'">Videos</a>
-                <a class="btn btn-primary" href="#" ng-click="ctrl.query='document'">Documents</a>
-                <a class="btn btn-primary" href="#" ng-click="ctrl.query='guide'">Guides</a>
-                <a class="btn btn-primary" href="#" ng-click="ctrl.query='report'">Reports</a>
-            </div><!--/.hero-body-->
-        </div><!--/.container-fluid-->
-    </section><!--/.hero -->
-    <section>
-        <div class="container-fluid">
-            <a href="#" ng-click="ctrl.reverse = !ctrl.reverse" ng-class="{reverse:ctrl.reverse}">Sort Most Recent</a>
+    <div class="container-fluid">
+        <h1>First Post</h1>
+    </div><!--/.container-fluid-->
+    <time datetime="2016-02-01T11:53:52-05:00" itemprop="datePublished">Feb 1, 2016</time>
+    <span class="author">John Doe</span>
+</section><!--/.hero -->
+<section>
+    <div class="container-fluid">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <div class="container">
-                <div class="col-sm-3" ng-repeat="post in ctrl.posts | filter:ctrl.query | orderBy: post.date : ctrl.reverse">
-                    <div class="card">
-                        <img class="card-img-top" src="http://placehold.it/400x300" alt="Card image cap">
-                        <div class="card-block">
-                            <h4 class="card-title"><a class="post-link" href="[[post.url]]" ng-bind="post.title"></a></h4>
-                            <date class="post-meta" ng-bind="post.date"></date>
-                            <p class="card-text"><p>This is the base Jekyll theme. You can find ...</p>
-                            [[ post.url ]]
-                            <a href="[[post.url]]" class="btn btn-primary">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div><!--/.container-fluid-->
-    </section><!--/section -->
-</div>
-
+    </div><!--/.container-fluid-->
+    <div class="container-fluid" ng-controller="searchCtrl as ctrl" ng-cloak>
+        <h2>Related Content</h2>
+        <div class="related-content" ng-init="ctrl.getRelated('document report')">
+            <p ng-repeat="relatedPost in ctrl.related"><a class="post-link" href="[[relatedPost.url]]">[[ relatedPost.title ]]</a></p>
+        </div>
+    </div>
+</section><!--/section -->
 
     <section class="bg-primary text-xs-center" ng-controller="footerCtrl as ctrl">
   <div class="container-fluid container-small">

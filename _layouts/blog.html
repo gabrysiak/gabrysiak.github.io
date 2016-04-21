@@ -28,6 +28,7 @@ layout: default
                             <h4 class="card-title"><a class="post-link" href="[[post.url]]" ng-bind="post.title"></a></h4>
                             <date class="post-meta" ng-bind="post.date"></date>
                             <p class="card-text">{{ content | truncate:50 }}</p>
+                            [[ post.url ]]
                             <a href="[[post.url]]" class="btn btn-primary">Learn More</a>
                         </div>
                     </div>
