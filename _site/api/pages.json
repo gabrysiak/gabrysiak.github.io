@@ -1,0 +1,55 @@
+{
+  "pages": [
+    {
+      "title": "",
+      "url": "/404.html",
+      "order": ""
+    },
+    {
+      "title": "Blog",
+      "url": "/blog",
+      "order": ""
+    },
+    {
+      "title": "Events",
+      "url": "/events",
+      "order": ""
+    },
+    {
+      "title": "",
+      "url": "/feed.xml",
+      "order": ""
+    },
+    {
+      "title": "",
+      "url": "/",
+      "order": ""
+    },
+    {
+      "title": "Welcome to OpenStack @ Netapp",
+      "url": "/",
+      "order": ""
+    },
+    {
+      "title": "",
+      "url": "/css/main.css",
+      "order": ""
+    },
+    {
+      "title": "",
+      "url": "/api/pages.json",
+      "order": ""
+    },
+    {
+      "title": "",
+      "url": "/api/posts.json",
+      "order": ""
+    },
+    {
+      "title": "Product",
+      "url": "/product",
+      "order": ""
+    }
+    
+  ]
+}

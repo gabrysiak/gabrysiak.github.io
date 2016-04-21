@@ -1,0 +1,60 @@
+{
+  "posts": [
+    {
+      "title": "Test",
+      "url": "/short-urls-jekyll",
+      "date": "March 10, 2016",
+      "image": "/img/blog-img.png",
+      "categories": "video",
+      "tags": "lorem testing",
+      "type": "blog",
+      "keywords": " lorem testing video",
+      "raw_date": "2016-03-10 11:53:52 -0500"
+    },
+    {
+      "title": "Welcome to Jekyll!",
+      "url": "/short-urls-jekyll",
+      "date": "March 9, 2016",
+      "image": "/img/blog-img.png",
+      "categories": "report",
+      "tags": "testing",
+      "type": "blog",
+      "keywords": " testing report",
+      "raw_date": "2016-03-09 11:53:52 -0500"
+    },
+    {
+      "title": "First Post",
+      "url": "/short-urls-jekyll",
+      "date": "February 1, 2016",
+      "image": "/img/blog-img.png",
+      "categories": "document",
+      "tags": "random stuff",
+      "type": "blog",
+      "keywords": " random stuff document",
+      "raw_date": "2016-02-01 11:53:52 -0500"
+    },
+    {
+      "title": "Another Event",
+      "url": "/another-event.html",
+      "date": "June 9, 2014",
+      "image": "/img/blog-img.png",
+      "categories": "conference",
+      "tags": "random",
+      "type": "event",
+      "keywords": " random conference",
+      "raw_date": "2014-06-09 12:53:52 -0400"
+    },
+    {
+      "title": "Sample Event",
+      "url": "/sample-event.html",
+      "date": "February 1, 2012",
+      "image": "/img/blog-img.png",
+      "categories": "conference",
+      "tags": "random speakers",
+      "type": "event",
+      "keywords": " random speakers conference",
+      "raw_date": "2012-02-01 11:53:52 -0500"
+    }
+    
+  ]
+}
