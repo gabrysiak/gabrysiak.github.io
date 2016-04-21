@@ -3,8 +3,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+  <title>{% capture title %}NetApp {{ site.title }}: {{ page.title }}{% endcapture %}{{ title }}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="NetApp Opengraph">
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:creator" content="@{{ site.twitter_username }}">
+  {% if page.title %}
+    <meta name="twitter:title" content="{{ page.title }}">
+  {% else %}
+    <meta name="twitter:title" content="{{ site.title }}">
+  {% endif %}
+  {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% endif %}
+  {% if page.description %}
+    <meta name="twitter:description" content="{{ page.description }}">
+  {% else %}
+    <meta name="twitter:description" content="{{ site.description }}">
+  {% endif %}
+  {% if page.header-img %}
+    <meta name="twitter:image:src" content="{{ site.url }}/{{ page.image }}">
+  {% endif %}
 
   <!-- <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">

@@ -12,9 +12,10 @@ layout: default
     <div class="container-fluid">
         {{ content }}
     </div><!--/.container-fluid-->
-    <div class="container-fluid" ng-controller="searchCtrl as ctrl" ng-cloak>
-        <h2>Related Content</h2>
-        <div class="related-content" ng-init="ctrl.getRelated('{{ page.tags | join: " " }}')">
+    <div class="container-fluid" ng-controller="relatedCtrl as ctrl" ng-cloak>
+        <h3>Related Content</h3>
+        <div class="related-content" ng-init="ctrl.getRelated('{{ page.tags | join: " " }}', '{{ page.url }}', '{{ page.type }}')">
+            <p ng-show="ctrl.related.length === 0">No Related Content at this time.</p>
             <p ng-repeat="relatedPost in ctrl.related"><a class="post-link" href="[[relatedPost.url]]">[[ relatedPost.title ]]</a></p>
         </div>
     </div>

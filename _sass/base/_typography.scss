@@ -30,7 +30,8 @@ h3 {
 }
 
 h4 {
-
+	font-size: 1.125rem;
+	color: $color-primary-gray-dark;
 }
 
 h5 {
@@ -64,4 +65,29 @@ p {
 //misc
 img {
 	max-width: 100%;
+}
+
+/* Font Awesome icon font overrides */
+.fa-document:before {
+	content: '\f15c';
+}
+
+.fa-video:before {
+	content: '\f16a';
+}
+
+.fa-report:before {
+	content: '\f14e';
+}
+
+.fa-conference:before {
+	content: '\f0c0';
+}
+
+.fa-webinar:before {
+	content: '\f108';
+}
+
+.fa-recap:before {
+	content: '\f021';
 }

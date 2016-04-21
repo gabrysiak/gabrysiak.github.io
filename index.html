@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="home" ng-controller="homeCtrl as ctrl" ng-cloak>
+<article class="home">
     <header class="page-header">
         <h1 class="page-title">NetApp Landing</h1>
     </header>
@@ -12,9 +12,15 @@ layout: default
     </div>
 
     <div class="container">
-        <div ng-repeat="project in ctrl.projects" class="col-xs-4">
-            <h2 ng-bind="project.name"></h2>
-            <p ng-bind="project.description"></p>
+        <div class="col-xs-4">
+            <h2>Openstack</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="col-xs-4">
+            <h2>Containers</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </div>
 

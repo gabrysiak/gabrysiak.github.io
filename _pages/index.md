@@ -1,16 +1,7 @@
 ---
-layout: page
-title: Product
-permalink: /product
+layout: project-index
+title: Welcome to OpenStack @ Netapp
+permalink: /
 ---
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-[Learn More](http://www.google.com)
-
-Let's Get Started
-
-Take a Test Drive
-
-Our OpenStack Story
-

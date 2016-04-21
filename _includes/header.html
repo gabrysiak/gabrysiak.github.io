@@ -1,28 +1,42 @@
-<header class="site-header" ng-controller="headerCtrl as ctrl" ng-cloak>
+<header class="site-header" ng-cloak>
   <div class="container-fluid">
     
-    
     <div class="header-logo">
-      <a class="logo" href="#">
-        <span class="current-project">[[ project.charAt(0).toUpperCase() + project.slice(1) ]]</span>
+      <a class="logo" href="/">
+        <span class="current-project">{{ site.title }}</span>
         <img src="/img/logo.png" srcset="/img/logo@2x.png 2x" alt="NetApp Logo">
       </a>
     </div>
     <div class="header-navs">
       <ul class="main-menu">
-        <li class="" ng-repeat="page in ctrl.mainMenu">
-          <a class="" href="[[ page.url ]]">[[ page.title ]]</a>
-        </li>
+          <li>
+            <a href="http://community.netapp.com/t5/OpenStack-Discussions/bd-p/openstack-discussions" target="_blank">Community</a>
+          </li>
+          <li>
+            <a href="https://github.com/NetApp/Harvest" target="_blank">Code</a>
+          </li>
+          <li>
+            <a href="#">Resources</a>
+          </li>
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
+          <li>
+            <a href="/events">Events</a>
+          </li>
       </ul>
 
       <div class="dropdown projects">
         <button class="btn btn-default dropdown-toggle" type="button" id="projects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          [[ project.charAt(0).toUpperCase() + project.slice(1) ]]
+          {{ site.title }}
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="projects">
-          <li class="nav-item" ng-repeat="project in ctrl.projects">
-            <a class="nav-link" href="/[[ project.slug ]]" ng-click="setProject(project.slug)">[[ project.name ]]</a>
+          <li class="nav-item">
+            <a class="nav-link" href="/openstack">{{ site.title }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Containers</a>
           </li>
         </ul>
       </div><!--/.dropdown.projects-->

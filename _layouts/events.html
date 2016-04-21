@@ -1,21 +1,18 @@
 ---
 layout: default
 ---
-<div ng-controller="searchCtrl as ctrl" ng-init="ctrl.init('blog')" ng-cloak>
+<div ng-controller="searchCtrl as ctrl" ng-init="ctrl.init('event')" ng-cloak>
     <section class="hero">
         <div class="container-fluid">
-            <div class="hero-body hero-body-medium">
+            <div class="hero-body hero-body-small">
                 <div class="input-group">
                     <div class="input-group-addon"><span class="fa fa-search"></span></div>
                     <input type="search" class="form-control" id="keywords" placeholder="Type Some Keywords" ng-model="ctrl.query">
                 </div>
-                <div class="filter-options">
-                    <a class="btn btn-primary form-control" href="#" ng-click="ctrl.sort='video'">Videos</a>
-                    <a class="btn btn-primary form-control" href="#" ng-click="ctrl.sort='document'">Documents</a>
-                    <a class="btn btn-primary form-control" href="#" ng-click="ctrl.sort='guide'">Guides</a>
-                    <a class="btn btn-primary form-control" href="#" ng-click="ctrl.sort='report'">Reports</a>
-                    <a class="btn btn-primary form-control" href="#" ng-click="ctrl.sort=''">Clear Filter</a>
-                </div>  
+                <a class="btn btn-primary" href="#" ng-click="ctrl.sort='conference'">Conferences</a>
+                <a class="btn btn-primary" href="#" ng-click="ctrl.sort='webinar'">Webinars</a>
+                <a class="btn btn-primary" href="#" ng-click="ctrl.sort='recap'">Recaps</a>
+                <a class="btn btn-primary" href="#" ng-click="ctrl.sort=''">Clear Filter</a>
             </div><!--/.hero-body-->
         </div><!--/.container-fluid-->
     </section><!--/.hero -->
