@@ -48,6 +48,7 @@ twitter_username: openstacknetapp
 github_username:  netapp
 youtube_username: NetAppTV
 
+permalink: date
 paginate_path: /page:num
 timezone: null
 
