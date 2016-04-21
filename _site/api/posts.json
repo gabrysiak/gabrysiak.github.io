@@ -2,58 +2,57 @@
   "posts": [
     {
       "title": "Test",
-      "url": "/test.html",
+      "url": "/openstack/2016/03/10/test.html",
       "date": "March 10, 2016",
-      "image": "/img/blog-img.png",
-      "categories": "video",
-      "tags": "lorem testing",
-      "type": "blog",
-      "keywords": " lorem testing video",
+      "categories": "openstack",
+      "tags": "report",
+      "keywords": " report openstack",
       "raw_date": "2016-03-10 11:53:52 -0500"
     },
     {
       "title": "Welcome to Jekyll!",
-      "url": "/welcome-to-jekyll.html",
+      "url": "/openstack/2016/03/09/welcome-to-jekyll.html",
       "date": "March 9, 2016",
-      "image": "/img/blog-img.png",
-      "categories": "report",
-      "tags": "testing",
-      "type": "blog",
-      "keywords": " testing report",
+      "categories": "openstack",
+      "tags": "video",
+      "keywords": " video openstack",
       "raw_date": "2016-03-09 11:53:52 -0500"
     },
     {
       "title": "First Post",
-      "url": "/first-post.html",
+      "url": "/openstack/2016/02/01/first-post.html",
       "date": "February 1, 2016",
-      "image": "/img/blog-img.png",
-      "categories": "document",
-      "tags": "random stuff",
-      "type": "blog",
-      "keywords": " random stuff document",
+      "categories": "openstack",
+      "tags": "document report",
+      "keywords": " document report openstack",
       "raw_date": "2016-02-01 11:53:52 -0500"
     },
     {
-      "title": "Another Event",
-      "url": "/another-event.html",
-      "date": "June 9, 2014",
-      "image": "/img/blog-img.png",
-      "categories": "conference",
-      "tags": "random",
-      "type": "event",
-      "keywords": " random conference",
-      "raw_date": "2014-06-09 12:53:52 -0400"
+      "title": "First Post",
+      "url": "/containers/2016/02/01/first-post.html",
+      "date": "February 1, 2016",
+      "categories": "containers",
+      "tags": "video",
+      "keywords": " video containers",
+      "raw_date": "2016-02-01 11:53:52 -0500"
     },
     {
-      "title": "Sample Event",
-      "url": "/sample-event.html",
-      "date": "February 1, 2012",
-      "image": "/img/blog-img.png",
-      "categories": "conference",
-      "tags": "random speakers",
-      "type": "event",
-      "keywords": " random speakers conference",
-      "raw_date": "2012-02-01 11:53:52 -0500"
+      "title": "Harvest Sample",
+      "url": "/harvest/2015/11/05/sample.html",
+      "date": "November 5, 2015",
+      "categories": "harvest",
+      "tags": "report",
+      "keywords": " report harvest",
+      "raw_date": "2015-11-05 11:53:52 -0500"
+    },
+    {
+      "title": "Containers Sample",
+      "url": "/containers/2015/11/05/sample.html",
+      "date": "November 5, 2015",
+      "categories": "containers",
+      "tags": "document",
+      "keywords": " document containers",
+      "raw_date": "2015-11-05 11:53:52 -0500"
     }
     
   ]

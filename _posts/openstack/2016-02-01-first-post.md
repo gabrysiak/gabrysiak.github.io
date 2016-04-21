@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "Another Event"
-image: /img/blog-img.png
-date:   2014-06-09 11:53:52 -0500
-categories: conference
-tags: random
-type: event
+title:  "First Post"
+date:   2016-02-01 11:53:52 -0500
+categories: openstack
+tags: document report
 author: John Doe
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

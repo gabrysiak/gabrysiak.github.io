@@ -4,8 +4,8 @@
 
 	//add multiple background images here
 	background: $color-secondary;
-	background: url(/img/green-nodes-top-left.png) top left no-repeat, 
-				url(/img/green-nodes-bottom-right.png) bottom right no-repeat $color-secondary;
+	background: url(../img/testimonial-nodes-left.png) top left no-repeat, url(../img/testimonial-nodes-right.png) bottom right no-repeat $color-secondary;
+	// background-size: auto 100%, auto 100%;
 
 
 	//element styles
@@ -18,10 +18,6 @@
 		font-style: normal;
 		font-weight: 300;
 		font-size: 1.25rem;
-	}
-
-	@include media-breakpoint-down(sm) {
-		background: url(/img/green-nodes-top-left.png) top left no-repeat $color-secondary;
 	}
 }
 

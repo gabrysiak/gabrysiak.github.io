@@ -28,15 +28,56 @@
   </div>
 </section>
 
-<footer id="footer">
+<footer id="footer" ng-controller="headerCtrl as ctrl" ng-cloak>
   <div class="container-fluid">
-    <ul class="nav nav-inline footer-menu">
-      <li class="nav-item"><a class="nav-link" href="/product">Product</a></li>
-      <li class="nav-item"><a class="nav-link" href="https://mysupport.netapp.com/NOW/public/cloudontap/" target="_blank">Support</a></li>
-      <li class="nav-item"><a href="//twitter.com/{{ site.twitter_username }}" target="_blank"><i class="zmdi zmdi-twitter"></i></a><a href="//youtube.com/{{ site.twitter_username }}" target="_blank"><i class="zmdi zmdi-youtube-play"></i></a></li>
-    </ul>
+    <nav class="nav nav-inline footer-menu">
+      <a ng-repeat="page in ctrl.footerMenu" class="nav-link" href="[[ page.url ]]">[[ page.title ]]</a>
+    </nav>
 
     <div class="copyright">&copy; {{ site.time | date: '%Y' }} NetApp, All rights reserved.</div>
-
   </div>
 </footer>
+
+<!-- <footer class="site-footer" ng-controller="headerCtrl as ctrl" ng-cloak>
+
+  <div class="wrapper">
+    
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>{{ site.title }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          {% if site.github_username %}
+          <li>
+            {% include icon-github.html username=site.github_username %}
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            {% include icon-twitter.html username=site.twitter_username %}
+          </li>
+          {% endif %}
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>{{ site.description }}</p>
+      </div>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li class="nav-item" ng-repeat="page in ctrl.footerMenu">
+        <a class="nav-link" href="[[ page.url ]]">[[ page.title ]]</a>
+      </li>
+    </ul>
+
+  </div>
+
+</footer>
+ -->

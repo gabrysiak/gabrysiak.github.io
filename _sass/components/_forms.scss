@@ -1,6 +1,6 @@
 /*
 |--------------------------------------------------------------------------
-| Forms
+| Footer
 |--------------------------------------------------------------------------
 */
 // @include media-breakpoint-up(sm) {
@@ -16,55 +16,3 @@
 	#subscription-button {
 		background: #8EC373;
 	}
-
-
-//filter options (in blog and events hero sections)
-.form-control {
-	.hero & {
-		color: #fff;
-		text-transform: uppercase;
-		padding: 1rem;
-		border: 1px solid $color-primary-light;
-		background: rgba(0, 0, 0, .2);
-
-		i {
-			color: $color-primary;
-		}
-	}
-}
-
-.filter-options {
-	margin-top: 1rem;
-
-	a + a {
-		margin-top: .5rem;
-	}
-
-	@include media-breakpoint-up(sm) {
-		@include flexbox;
-		@include flex-direction(row);
-		@include flex-wrap(wrap);
-
-		a {
-			@include flex(1 1 50%);
-			margin-top: .5rem;
-		}
-
-		a:nth-child(even) {
-			// margin-right: 1rem;
-		}
-	}
-
-
-	@include media-breakpoint-up(md) {
-		a {
-			@include flex(1);
-			margin-top: 0;
-		}
-
-		a + a {
-			margin-left: 1rem;
-			margin-top: 0;
-		}
-	}
-}

@@ -2,52 +2,114 @@
   "pages": [
     {
       "title": "",
+      "project": "",
+      "type": "",
       "url": "/404.html",
       "order": ""
     },
     {
       "title": "Blog",
-      "url": "/blog",
-      "order": ""
+      "project": "openstack",
+      "type": "blog",
+      "url": "/openstack/blog",
+      "order": "4"
     },
     {
-      "title": "Events",
-      "url": "/events",
-      "order": ""
+      "title": "Blog",
+      "project": "containers",
+      "type": "blog",
+      "url": "/containers/blog",
+      "order": "4"
+    },
+    {
+      "title": "Blog",
+      "project": "harvest",
+      "type": "blog",
+      "url": "/harvest/blog",
+      "order": "4"
+    },
+    {
+      "title": "Code",
+      "project": "containers",
+      "type": "code",
+      "url": "/containers/code",
+      "order": "2"
+    },
+    {
+      "title": "Community",
+      "project": "openstack",
+      "type": "community",
+      "url": "/openstack/community",
+      "order": "1"
     },
     {
       "title": "",
+      "project": "",
+      "type": "",
       "url": "/feed.xml",
       "order": ""
     },
     {
       "title": "",
+      "project": "",
+      "type": "",
       "url": "/",
       "order": ""
     },
     {
       "title": "Welcome to OpenStack @ Netapp",
-      "url": "/",
-      "order": ""
+      "project": "openstack",
+      "type": "landing",
+      "url": "/openstack/",
+      "order": "0"
+    },
+    {
+      "title": "Welcome to Containers @ Netapp",
+      "project": "containers",
+      "type": "landing",
+      "url": "/containers/",
+      "order": "0"
+    },
+    {
+      "title": "Welcome to Harvest @ Netapp",
+      "project": "harvest",
+      "type": "landing",
+      "url": "/harvest/",
+      "order": "0"
     },
     {
       "title": "",
+      "project": "",
+      "type": "",
       "url": "/css/main.css",
       "order": ""
     },
     {
       "title": "",
+      "project": "",
+      "type": "",
       "url": "/api/pages.json",
       "order": ""
     },
     {
       "title": "",
+      "project": "",
+      "type": "",
       "url": "/api/posts.json",
       "order": ""
     },
     {
       "title": "Product",
+      "project": "root",
+      "type": "",
       "url": "/product",
+      "order": "0"
+    },
+    {
+      "title": "",
+      "project": "",
+      "type": "",
+      "url": "/api/projects.json",
       "order": ""
     }
     

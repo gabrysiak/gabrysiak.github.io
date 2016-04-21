@@ -6,8 +6,8 @@
 </description>
     <link>//netapp.github.io//</link>
     <atom:link href="//netapp.github.io//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 21 Apr 2016 10:58:41 -0400</pubDate>
-    <lastBuildDate>Thu, 21 Apr 2016 10:58:41 -0400</lastBuildDate>
+    <pubDate>Thu, 21 Apr 2016 11:13:04 -0400</pubDate>
+    <lastBuildDate>Thu, 21 Apr 2016 11:13:04 -0400</lastBuildDate>
     <generator>Jekyll v3.1.2</generator>
     
       <item>
@@ -16,7 +16,7 @@
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
-&lt;p&gt;Jekyll also offers powerful support for code snippets: Reports&lt;/p&gt;
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
@@ -28,15 +28,13 @@
 
 </description>
         <pubDate>Thu, 10 Mar 2016 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//test.html</link>
-        <guid isPermaLink="true">//netapp.github.io//test.html</guid>
+        <link>//netapp.github.io//openstack/2016/03/10/test.html</link>
+        <guid isPermaLink="true">//netapp.github.io//openstack/2016/03/10/test.html</guid>
         
-        <category>lorem</category>
-        
-        <category>testing</category>
+        <category>report</category>
         
         
-        <category>video</category>
+        <category>openstack</category>
         
       </item>
     
@@ -58,13 +56,13 @@
 
 </description>
         <pubDate>Wed, 09 Mar 2016 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">//netapp.github.io//welcome-to-jekyll.html</guid>
+        <link>//netapp.github.io//openstack/2016/03/09/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">//netapp.github.io//openstack/2016/03/09/welcome-to-jekyll.html</guid>
         
-        <category>testing</category>
+        <category>video</category>
         
         
-        <category>report</category>
+        <category>openstack</category>
         
       </item>
     
@@ -78,20 +76,20 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
         <pubDate>Mon, 01 Feb 2016 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//first-post.html</link>
-        <guid isPermaLink="true">//netapp.github.io//first-post.html</guid>
-        
-        <category>random</category>
-        
-        <category>stuff</category>
-        
+        <link>//netapp.github.io//openstack/2016/02/01/first-post.html</link>
+        <guid isPermaLink="true">//netapp.github.io//openstack/2016/02/01/first-post.html</guid>
         
         <category>document</category>
         
+        <category>report</category>
+        
+        
+        <category>openstack</category>
+        
       </item>
     
       <item>
-        <title>Another Event</title>
+        <title>First Post</title>
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -99,19 +97,19 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
-        <pubDate>Mon, 09 Jun 2014 12:53:52 -0400</pubDate>
-        <link>//netapp.github.io//another-event.html</link>
-        <guid isPermaLink="true">//netapp.github.io//another-event.html</guid>
+        <pubDate>Mon, 01 Feb 2016 11:53:52 -0500</pubDate>
+        <link>//netapp.github.io//containers/2016/02/01/first-post.html</link>
+        <guid isPermaLink="true">//netapp.github.io//containers/2016/02/01/first-post.html</guid>
         
-        <category>random</category>
+        <category>video</category>
         
         
-        <category>conference</category>
+        <category>containers</category>
         
       </item>
     
       <item>
-        <title>Sample Event</title>
+        <title>Harvest Sample</title>
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -119,16 +117,34 @@ consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 01 Feb 2012 11:53:52 -0500</pubDate>
-        <link>//netapp.github.io//sample-event.html</link>
-        <guid isPermaLink="true">//netapp.github.io//sample-event.html</guid>
+        <pubDate>Thu, 05 Nov 2015 11:53:52 -0500</pubDate>
+        <link>//netapp.github.io//harvest/2015/11/05/sample.html</link>
+        <guid isPermaLink="true">//netapp.github.io//harvest/2015/11/05/sample.html</guid>
         
-        <category>random</category>
-        
-        <category>speakers</category>
+        <category>report</category>
         
         
-        <category>conference</category>
+        <category>harvest</category>
+        
+      </item>
+    
+      <item>
+        <title>Containers Sample</title>
+        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 05 Nov 2015 11:53:52 -0500</pubDate>
+        <link>//netapp.github.io//containers/2015/11/05/sample.html</link>
+        <guid isPermaLink="true">//netapp.github.io//containers/2015/11/05/sample.html</guid>
+        
+        <category>document</category>
+        
+        
+        <category>containers</category>
         
       </item>
     

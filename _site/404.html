@@ -6,25 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>NetApp NetApp: </title>
+  <title>NetApp</title>
   <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
-
-  <!-- Twitter Meta -->
-  <meta name="twitter:card" content="NetApp Opengraph">
-  <meta name="twitter:site" content="@openstacknetapp">
-  <meta name="twitter:creator" content="@openstacknetapp">
-  
-    <meta name="twitter:title" content="NetApp">
-  
-  
-    <meta name="twitter:url" content="//netapp.github.io//404.html">
-  
-  
-    <meta name="twitter:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
-">
-  
-  
 
   <!-- <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css"> -->
   <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
@@ -42,45 +26,31 @@
 
   <body>
 
-    <header class="site-header" ng-cloak>
+    <header class="site-header" ng-controller="headerCtrl as ctrl" ng-cloak>
   <div class="container-fluid">
     
+    
     <div class="header-logo">
-      <a class="logo" href="/">
-        <span class="current-project">NetApp</span>
+      <a class="logo" href="#">
+        <span class="current-project">[[ project.charAt(0).toUpperCase() + project.slice(1) ]]</span>
         <img src="/img/logo.png" srcset="/img/logo@2x.png 2x" alt="NetApp Logo">
       </a>
     </div>
     <div class="header-navs">
       <ul class="main-menu">
-          <li>
-            <a href="http://community.netapp.com/t5/OpenStack-Discussions/bd-p/openstack-discussions" target="_blank">Community</a>
-          </li>
-          <li>
-            <a href="https://github.com/NetApp/Harvest" target="_blank">Code</a>
-          </li>
-          <li>
-            <a href="#">Resources</a>
-          </li>
-          <li>
-            <a href="/blog">Blog</a>
-          </li>
-          <li>
-            <a href="/events">Events</a>
-          </li>
+        <li class="" ng-repeat="page in ctrl.mainMenu">
+          <a class="" href="[[ page.url ]]">[[ page.title ]]</a>
+        </li>
       </ul>
 
       <div class="dropdown projects">
         <button class="btn btn-default dropdown-toggle" type="button" id="projects" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          NetApp
+          [[ project.charAt(0).toUpperCase() + project.slice(1) ]]
           <span class="caret"></span>
         </button>
         <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="projects">
-          <li class="nav-item">
-            <a class="nav-link" href="/openstack">NetApp</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Containers</a>
+          <li class="nav-item" ng-repeat="project in ctrl.projects">
+            <a class="nav-link" href="/[[ project.slug ]]" ng-click="setProject(project.slug)">[[ project.name ]]</a>
           </li>
         </ul>
       </div><!--/.dropdown.projects-->
@@ -89,16 +59,16 @@
   </div><!--/.container-fluid-->
 </header>
     
-    <section class="hero">
-    <div class="container-fluid">
-        <h1>404 Not Found</h1>
-    </div><!--/.container-fluid-->
-</section><!--/.hero -->
-<section>
-  <div class="container-fluid">
-    <p>We can't find the page your looking for, try again.</p>
-  </div><!--/.container-fluid-->
-</section><!--/section -->
+    <article class="404">
+    <header class="page-header">
+        <h1 class="page-title">404 Not Found</h1>
+    </header>
+
+    <div class="page-content">
+        <p>We can't find the page your looking for, try again.</p>
+    </div>
+
+</article>
 
     <section class="bg-primary text-xs-center" ng-controller="footerCtrl as ctrl">
   <div class="container-fluid container-small">
@@ -130,18 +100,64 @@
   </div>
 </section>
 
-<footer id="footer">
+<footer id="footer" ng-controller="headerCtrl as ctrl" ng-cloak>
   <div class="container-fluid">
-    <ul class="nav nav-inline footer-menu">
-      <li class="nav-item"><a class="nav-link" href="/product">Product</a></li>
-      <li class="nav-item"><a class="nav-link" href="https://mysupport.netapp.com/NOW/public/cloudontap/" target="_blank">Support</a></li>
-      <li class="nav-item"><a href="//twitter.com/openstacknetapp" target="_blank"><i class="zmdi zmdi-twitter"></i></a><a href="//youtube.com/openstacknetapp" target="_blank"><i class="zmdi zmdi-youtube-play"></i></a></li>
-    </ul>
+    <nav class="nav nav-inline footer-menu">
+      <a ng-repeat="page in ctrl.footerMenu" class="nav-link" href="[[ page.url ]]">[[ page.title ]]</a>
+    </nav>
 
     <div class="copyright">&copy; 2016 NetApp, All rights reserved.</div>
-
   </div>
 </footer>
+
+<!-- <footer class="site-footer" ng-controller="headerCtrl as ctrl" ng-cloak>
+
+  <div class="wrapper">
+    
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>NetApp</li>
+          <li><a href="mailto:info@netapp.com">info@netapp.com</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/netapp"><span class="icon icon--github"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span><span class="username">netapp</span></a>
+
+          </li>
+          
+
+          
+          <li>
+            <a href="https://twitter.com/openstacknetapp"><span class="icon icon--twitter"><svg viewBox="0 0 16 16"><path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/></svg>
+</span><span class="username">openstacknetapp</span></a>
+
+          </li>
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+</p>
+      </div>
+    </div>
+
+    <ul class="nav navbar-nav">
+      <li class="nav-item" ng-repeat="page in ctrl.footerMenu">
+        <a class="nav-link" href="[[ page.url ]]">[[ page.title ]]</a>
+      </li>
+    </ul>
+
+  </div>
+
+</footer>
+ -->
 
     <script src="/lib/jquery/dist/jquery.min.js"></script>
     <script src="/lib/tether/dist/js/tether.min.js"></script>

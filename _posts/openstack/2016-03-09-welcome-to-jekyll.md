@@ -1,11 +1,9 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-image: /img/blog-img.png
 date:   2016-03-09 11:53:52 -0500
-categories: report
-tags: testing
-type: blog
+categories: openstack
+tags: video
 author: John Doe
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
