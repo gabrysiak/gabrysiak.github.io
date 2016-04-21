@@ -1,14 +1,13 @@
-'use strict';
-
 var app = angular.module('netApp', [], function($interpolateProvider) {
     $interpolateProvider.startSymbol('[[');
     $interpolateProvider.endSymbol(']]');
 })
 
-.run(function($rootScope) {
-    // get current project from url
-    var project = window.location.pathname.split('/');
+.controller('searchCtrl', function($scope, $http) {
+    var _this = this;
 
-    // set current project to our global rootscope
-    $rootScope.project = project[1];
+    $http.get('/api/posts.json').success(function(data) {
+        _this.posts = data.posts;
+    });
+ 
 })

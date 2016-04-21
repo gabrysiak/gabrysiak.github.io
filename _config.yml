@@ -6,8 +6,8 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: NetApp
-email: info@netapp.com
+title: Jekyll-Demo
+email: info@demo.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -18,10 +18,7 @@ destination: ./_site
 plugins_dir:     ./_plugins
 layouts_dir:     ./_layouts
 data_dir: ./_data
-collections:
-  posts:
-    output: true
-    permalink: /:title/
+collections: null
 
 safe: false
 include: [".htaccess", "_pages"]
@@ -46,9 +43,9 @@ excerpt_separator: "\n\n"
 
 detach: false
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "//netapp.github.io/" # the base hostname & protocol for your site
-twitter_username: openstacknetapp
-github_username:  netapp
+url: "//gabrysiak.github.io/" # the base hostname & protocol for your site
+twitter_username: gabrysiak
+github_username:  gabrysiak
 
 permalink: date
 paginate_path: /page:num
